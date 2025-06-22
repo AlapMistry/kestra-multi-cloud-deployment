@@ -23,19 +23,19 @@ You require to define the Kestra secrets as mentioned in the prerequisites. It m
    1. Your GCP account, a valid project ID, and a valid service account key JSON.
       1. GCP_PROJECT_ID - Secret for GCP project ID
       2. GCP_SERVICE_ACCOUNT - Secret for GCP service account key JSON
-   3. You require to enable the artifact remote repository API.
-   4. You require to mention the GCP valid region in the Kestra secret.
+   3. Enable the artifact remote repository API.
+   4. Define the GCP valid region in the Kestra secret.
       1. GCP_REGION - Secret for GCP region (ex., `asia-south1`)
 3. Microsoft Azure deployment:
    1. Your Microsoft Azure account.
-   2. You require to create a resource group.
+   2. Create a resource group.
       1. AZURE_RESOURCE_GROUP - Secret for your valid resource group
-   4. You require to register a resource provider for a container instance.
-   5. You require to create a service principal with the role `contributor` and a resource group's resource ID as a scope. You will get the mentioned values in a response.
+   4. Register a resource provider for a container instance.
+   5. Create a service principal with the role `contributor` and a resource group's resource ID as a scope. You will get the followed values in a response.
       1. AZURE_APP_ID - Secret for Azure application ID
       2. AZURE_SERVICE_PRINCIPAL_PASSWORD - Secret for the password of a service principal
       3. AZURE_TENANT_ID - Secret for tenant ID
-   6. You require to mention the Azure valid location in the Kestra secret.
+   6. Define the Azure valid location in the Kestra secret.
       1. AZURE_LOCATION - Secret for Azure location (ex., `centralindia`)
 
 ## References:
@@ -44,7 +44,8 @@ You require to define the Kestra secrets as mentioned in the prerequisites. It m
    2. https://kestra.io/docs/installation/docker-compose
    3. https://kestra.io/plugins
    4. https://kestra.io/blueprints
-   5. This flow is implemented using the following plugins and tasks:
+   5. https://kestra.io/docs/concepts/secret
+   6. This flow is implemented using the following plugins and tasks:
       1. https://kestra.io/plugins/core/flow/io.kestra.plugin.core.flow.workingdirectory
       2. https://kestra.io/plugins/plugin-git/io.kestra.plugin.git.clone
       3. https://kestra.io/plugins/plugin-docker/io.kestra.plugin.docker.build
