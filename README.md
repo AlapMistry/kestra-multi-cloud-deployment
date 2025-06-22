@@ -11,6 +11,9 @@ You will get success for local and Azure deployment, but a warning for GCP deplo
 ## Kestra Secrets:
 You require to define the Kestra secrets as mentioned in the prerequisites. It must be encoded Base64 as mentioned in the Kestra documentation.
 
+> [!TIP]
+> Choose Line Feed (LF) as End Of Line (EOL) characters in the `.env` file before encoding Kestra secrets. Your secret value must be on a single line.
+
 ## Prerequisites:
 1. Local deployment:
    1. Your Docker Hub account and a valid Personal Access Token (PAT).
