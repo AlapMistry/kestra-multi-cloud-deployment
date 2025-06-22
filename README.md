@@ -63,12 +63,14 @@ You require to define the Kestra secrets as mentioned in the prerequisites. It m
 4. ngrok:
    1. https://ngrok.com/
    2. https://ngrok.com/docs/
+   3. https://ngrok.com/blog-post/free-static-domains-ngrok-users
 5. GCP:
    1. https://cloud.google.com/free?hl=en
    2. https://console.cloud.google.com/
    3. https://cloud.google.com/sdk/gcloud
    4. https://cloud.google.com/sdk/docs/cheatsheet
    5. https://cloud.google.com/run/docs/overview/what-is-cloud-run
+   6. https://cloud.google.com/artifact-registry/docs/enable-service
 6. Azure:
    1. https://azure.microsoft.com/en-in/pricing/free-services/
    2. https://portal.azure.com/
@@ -80,3 +82,9 @@ You require to define the Kestra secrets as mentioned in the prerequisites. It m
    8. https://learn.microsoft.com/en-us/cli/azure/azure-cli-sp-tutorial-1?view=azure-cli-latest&tabs=bash
    9. https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
    10. https://learn.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest
+
+## Scope of Improvements:
+1. Create subflows for different deployments
+2. Get authentication tokens from the respective cloud, if possible
+3. Support other cloud providers like AWS, Civo, etc.
+4. Get the application deployment URL from logs, if possible
